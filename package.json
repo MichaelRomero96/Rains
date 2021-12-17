@@ -5,7 +5,7 @@
   "main": "/js/app.js",
   "scripts": {
     "babel": "babel js/app.js --out-file js/output.js --presets=@babel/preset-env",
-    "webpack": "webpack --mode=development"
+    "webpack": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
