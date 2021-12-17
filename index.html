@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo&family=Exo:wght@300&family=Lato:ital,wght@1,300&family=Sarabun:wght@200&family=Ubuntu:wght@500&display=swap"
         rel="stylesheet">
-    <script src="/js/app.js"></script>
+    <script src="/public/js/bundle.js"></script>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             <img class="img-logo" src="/assets/img/logo.svg" alt="logo">
         </div>
         <div class="right-panel">
-            <i class="fas fa-euro-sign fa-lg"></i>
+            <i title="Set Currency" id='currency-btn' class="fas fa-euro-sign fa-lg"></i>
             <i class="fas fa-search fa-lg"></i>
             <i class="fas fa-shopping-bag fa-lg"></i>
             <i class="fas fa-bars fa-lg"></i>
@@ -50,6 +50,7 @@
     </section>
 
     <section class="first-cards">
+        <!-- Reference from creation Card-->
         <!-- <div class="card">
             <img src="/assets/img/vancouver-bag.jpg" alt="">
             <div class="card-info">
@@ -120,84 +121,8 @@
         </div>
     </section>
 
-    <!-- <section class="first-cards">
-        <div class="card">
-            <img src="/assets/img/vancouver-bag.jpg" alt="">
-            <div class="card-info">
-                <span class="card-info-title">Rolltop Rucksack</span>
-                <br />
-                <div class="card-details">
-                    <div class="card-price">
-                        €80.00
-                    </div>
-                    <div class="card-rating">
-                        <div class="card-rating-icon">
-                            <span>4.9</span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span class="card-count-rating">(20)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/assets/img/vancouver-bag.jpg" alt="">
-            <div class="card-info">
-                <span class="card-info-title">Rolltop Rucksack</span>
-                <br />
-                <div class="card-details">
-                    <div class="card-price">
-                        €80.00
-                    </div>
-                    <div class="card-rating">
-                        <div class="card-rating-icon">
-                            <span>4.9</span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span class="card-count-rating">(20)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/assets/img/vancouver-bag.jpg" alt="">
-            <div class="card-info">
-                <span class="card-info-title">Rolltop Rucksack</span>
-                <br />
-                <div class="card-details">
-                    <div class="card-price">
-                        €80.00
-                    </div>
-                    <div class="card-rating">
-                        <div class="card-rating-icon">
-                            <span>4.9</span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span class="card-count-rating">(20)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/assets/img/vancouver-bag.jpg" alt="">
-            <div class="card-info">
-                <span class="card-info-title">Rolltop Rucksack</span>
-                <br />
-                <div class="card-details">
-                    <div class="card-price">
-                        €80.00
-                    </div>
-                    <div class="card-rating">
-                        <div class="card-rating-icon">
-                            <span>4.9</span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span class="card-count-rating">(20)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+    <section class="second-cards">
+    </section>
 
     <section class="spring-section">
         <div class="ts-title">
@@ -213,7 +138,7 @@
             <div>
                 <img class="img1" src="/assets/img/men-coat.jpg" alt="">
             </div>
-            <div>
+            <div class="ts-img-container">
                 <h1 class="ts-title">Long Puffer Jackez</h1>
             </div>
             <div class="fts-btn">

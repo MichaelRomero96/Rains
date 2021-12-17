@@ -58,6 +58,7 @@
 
   .fs-title {
     font-size: 2.2rem;
+    color: #2c2c2c;
   }
 
   .fs-img {
@@ -75,27 +76,35 @@
     justify-content: center;
   }
 
+  .second-cards {
+    padding: 1% 6%;
+    display: flex;
+    justify-content: center;
+  }
+
   .card {
     margin: 20px;
-    width: 50%;
+    width: 100%;
   }
   .card img {
-    // width: 80%;
+    width: 100%;
     max-height: 250px;
-    object-fit: cover;
+    object-fit: scale-down;
   }
   .card h6 {
     font-size: 1.2rem;
   }
+  .card-info {
+    min-height: 150px;
+  }
 
   .card-info-title {
-    // width: 100%;
-    // min-height: 40px;
     color: gray;
     font-weight: 700;
   }
 
   .card-price {
+    margin-left: 20px;
     font-weight: bold;
     flex-grow: 1;
   }
@@ -106,12 +115,13 @@
 
   .card-rating {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .card-rating-icon {
     color: #ff800a;
     font-weight: bold;
-    margin: 2px;
   }
 
   .card-count-rating {
@@ -143,6 +153,7 @@
 
   .ss-title {
     font-size: 2.2rem;
+    color: #2c2c2c;
   }
 
   .ss-btn {
@@ -207,23 +218,30 @@
   .ts-title {
     font-size: 2.2rem;
     width: 50%;
+    color: #2c2c2c;
   }
 
   .ts-img-1 {
-    // display: flex;
-    // justify-content: center;
     font-size: 2.2rem;
     width: 50%;
     padding-left: 20%;
   }
   .ts-img-1 img {
     max-width: 100%;
-    // background-color: blue;
   }
 
   .img-w {
     display: flex;
     justify-content: center;
+    span {
+      color: rgb(197, 197, 197);
+      font-size: 30px;
+      font-weight: bolder;
+      position: absolute;
+      bottom: 5%;
+      left: 40%;
+      background-color: #ff800a;
+    }
   }
   .img-w img {
     width: 65%;
@@ -442,6 +460,12 @@
     justify-content: center;
   }
 
+  .second-cards {
+    padding: 1% 6%;
+    display: flex;
+    justify-content: center;
+  }
+
   .card {
     margin: 20px;
     width: 80%;
@@ -511,7 +535,6 @@
   }
   .ts-img-1 img {
     max-width: 100%;
-    // background-color: blue;
   }
 
   .img-w {
@@ -520,27 +543,28 @@
   }
   .img-w img {
     width: 65%;
+    span {
+      color: rgb(197, 197, 197);
+      font-size: 30px;
+      font-weight: bolder;
+      position: absolute;
+      bottom: 5%;
+      left: 40%;
+      background-color: #ff800a;
+    }
   }
-  // .select-genre {
-  //   cursor: pointer;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   gap: 3%;
-  //   color: #8dab7f;
-  //   align-items: center;
-  //   margin-bottom: 2%;
-  //   margin-left: 2%;
-  // }
 }
 @media (max-width: 500px) {
   body {
-    width: 100%;
+    // width: 100%;
     font-family: "Sarabun", sans-serif;
     margin: auto;
+    padding: auto;
   }
 
   .first-section {
     display: block;
+    color: rgb(95, 95, 95);
   }
 
   .fs-btn {
@@ -569,6 +593,7 @@
 
   .fs-title {
     font-size: 1.5rem;
+    color: #2c2c2c;
   }
 
   .fs-img {
@@ -582,20 +607,25 @@
   }
 
   .first-cards {
-    display: flex;
+    display: block;
+    justify-content: center;
+  }
+
+  .second-cards {
+    display: block;
     justify-content: center;
   }
 
   .card img {
     width: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
   }
   .card h6 {
     font-size: 1.2rem;
   }
 
   .card-info {
-    max-height: 100px;
+    max-height: 130px;
   }
 
   .card-info-title {
@@ -614,6 +644,8 @@
 
   .card-rating {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   .card-rating-icon {
@@ -651,6 +683,7 @@
 
   .ss-title {
     font-size: 1.5rem;
+    color: #2c2c2c;
   }
 
   .ss-btn {
@@ -689,6 +722,7 @@
   .ts-title {
     font-size: 1.5rem;
     width: 100%;
+    color: #2c2c2c;
   }
 
   .ts-img-1 {
@@ -697,9 +731,7 @@
     padding: 0%;
   }
   .ts-img-1 img {
-    // padding-left: 8%;
     max-width: 100%;
-    // background-color: blue;
   }
 
   .img-w {
@@ -708,13 +740,19 @@
   }
   .img-w img {
     width: 100%;
+    span {
+      color: rgb(197, 197, 197);
+      font-size: 30px;
+      font-weight: bolder;
+      position: absolute;
+      bottom: 5%;
+      left: 40%;
+      background-color: #ff800a;
+    }
   }
 
   .section {
-    // margin: 6% 4%;
-    // padding: 0.5%;
     display: block;
-    // align-items: center;
   }
 
   .ts-btn {
@@ -769,7 +807,6 @@
   }
 
   .form-input {
-    // margin-left: 3%;
     border: 0;
     color: gray;
     font-weight: 700;
@@ -786,7 +823,6 @@
 
   .form-submit {
     display: flex;
-    // margin-left: 2%;
     border: #8dab7f 2px solid;
     width: 100%;
     height: 50px;
@@ -807,8 +843,6 @@
   .form {
     border-top: #e2e2e2 1px solid;
     border-bottom: #e2e2e2 1px solid;
-    // margin: 6% 4%;
-    // padding: 0.5%;
     display: block;
   }
 
@@ -841,11 +875,6 @@
     justify-content: center;
     display: flex;
     margin: 0%;
-    // flex-wrap: wrap;
-    // gap: 20%;
-    // margin: 5%;
-    // width: 70%;
-    // background-color: #ff800a;
   }
   .rains-divisions .services {
     color: #2c2c2c;
@@ -858,7 +887,6 @@
   }
   .division {
     width: 10%;
-    // background-color: aqua;
   }
 
   .footer {

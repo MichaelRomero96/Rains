@@ -59,6 +59,7 @@
 
   .fs-title {
     font-size: 2.2rem;
+    color: #2c2c2c;
   }
 
   .fs-img {
@@ -77,18 +78,29 @@
     justify-content: center;
   }
 
+  .second-cards {
+    padding: 1% 6%;
+    display: flex;
+    justify-content: center;
+  }
+
   .card {
     margin: 20px;
-    width: 50%;
+    width: 100%;
   }
 
   .card img {
+    width: 100%;
     max-height: 250px;
-    object-fit: cover;
+    object-fit: scale-down;
   }
 
   .card h6 {
     font-size: 1.2rem;
+  }
+
+  .card-info {
+    min-height: 150px;
   }
 
   .card-info-title {
@@ -97,6 +109,7 @@
   }
 
   .card-price {
+    margin-left: 20px;
     font-weight: bold;
     flex-grow: 1;
   }
@@ -107,12 +120,13 @@
 
   .card-rating {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .card-rating-icon {
     color: #ff800a;
     font-weight: bold;
-    margin: 2px;
   }
 
   .card-count-rating {
@@ -146,6 +160,7 @@
 
   .ss-title {
     font-size: 2.2rem;
+    color: #2c2c2c;
   }
 
   .ss-btn {
@@ -212,6 +227,7 @@
   .ts-title {
     font-size: 2.2rem;
     width: 50%;
+    color: #2c2c2c;
   }
 
   .ts-img-1 {
@@ -227,6 +243,15 @@
   .img-w {
     display: flex;
     justify-content: center;
+  }
+  .img-w span {
+    color: #c5c5c5;
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    background-color: #ff800a;
   }
 
   .img-w img {
@@ -454,6 +479,12 @@
     justify-content: center;
   }
 
+  .second-cards {
+    padding: 1% 6%;
+    display: flex;
+    justify-content: center;
+  }
+
   .card {
     margin: 20px;
     width: 80%;
@@ -538,16 +569,26 @@
   .img-w img {
     width: 65%;
   }
+  .img-w img span {
+    color: #c5c5c5;
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    background-color: #ff800a;
+  }
 }
 @media (max-width: 500px) {
   body {
-    width: 100%;
     font-family: "Sarabun", sans-serif;
     margin: auto;
+    padding: auto;
   }
 
   .first-section {
     display: block;
+    color: #5f5f5f;
   }
 
   .fs-btn {
@@ -576,6 +617,7 @@
 
   .fs-title {
     font-size: 1.5rem;
+    color: #2c2c2c;
   }
 
   .fs-img {
@@ -590,13 +632,18 @@
   }
 
   .first-cards {
-    display: flex;
+    display: block;
+    justify-content: center;
+  }
+
+  .second-cards {
+    display: block;
     justify-content: center;
   }
 
   .card img {
     width: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
   }
 
   .card h6 {
@@ -604,7 +651,7 @@
   }
 
   .card-info {
-    max-height: 100px;
+    max-height: 130px;
   }
 
   .card-info-title {
@@ -623,6 +670,8 @@
 
   .card-rating {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   .card-rating-icon {
@@ -662,6 +711,7 @@
 
   .ss-title {
     font-size: 1.5rem;
+    color: #2c2c2c;
   }
 
   .ss-btn {
@@ -701,6 +751,7 @@
   .ts-title {
     font-size: 1.5rem;
     width: 100%;
+    color: #2c2c2c;
   }
 
   .ts-img-1 {
@@ -720,6 +771,15 @@
 
   .img-w img {
     width: 100%;
+  }
+  .img-w img span {
+    color: #c5c5c5;
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    background-color: #ff800a;
   }
 
   .section {
