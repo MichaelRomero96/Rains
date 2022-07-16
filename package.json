@@ -6,7 +6,7 @@
   "scripts": {
     "babel": "babel js/app.js --out-file js/output.js --presets=@babel/preset-env",
     "build": "webpack --mode=production",
-    "dev": "webpack --mode=development"
+    "dev": "webpack --mode=development --watch"
   },
   "repository": {
     "type": "git",

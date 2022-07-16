@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rains - Home</title>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <script src="https://kit.fontawesome.com/371490ce59.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/371490ce59.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Arvo&family=Exo:wght@300&family=Lato:ital,wght@1,300&family=Sarabun:wght@200&family=Ubuntu:wght@500&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Arvo&family=Exo:wght@300&family=Lato:ital,wght@1,300&family=Sarabun:wght@200&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <script src="/public/js/bundle.js"></script>
-</head>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-
+  <body>
     <header class="appBar-container">
-        <div class="logo-container">
-            <img class="img-logo" src="/assets/img/logo.svg" alt="logo">
-        </div>
-        <div class="right-panel">
-            <i title="Set Currency" id='currency-btn' class="fas fa-euro-sign fa-lg"></i>
-            <i class="fas fa-search fa-lg"></i>
-            <i class="fas fa-shopping-bag fa-lg"></i>
-            <i class="fas fa-bars fa-lg"></i>
-        </div>
+      <div class="logo-container">
+        <img class="img-logo" src="/assets/img/logo.svg" alt="logo" />
+      </div>
+      <div class="right-panel">
+        <i
+          title="Set Currency"
+          id="currency-btn"
+          class="fas fa-euro-sign fa-lg"
+        ></i>
+        <i class="fas fa-search fa-lg"></i>
+        <i data-bs-toggle="modal" id="cart-button" class="fas fa-shopping-bag fa-lg"></i>
+        <i class="fas fa-bars fa-lg"></i>
+      </div>
     </header>
-
+    <button type="button" class="btn btn-primary">Primary</button>
     <section class="first-section">
-        <div class="fs-text">
-            <div class="fs-title">
-                <h1>
-                    Buy Waterproof Back Packs
-                </h1>
-            </div>
-            <h6 class="fs-description">
-                Water Proof sit amet, consectetur adipiscing elit, Pellentesue
-                nuc praesent cras phatetra diam ac turpis ultrices vestibulum.
-                Eu tristique suspendisse
-            </h6>
-            <div class="fs-btn"> Shop Now </div>
+      <div class="fs-text">
+        <div class="fs-title">
+          <h1>Buy Waterproof Back Packs</h1>
         </div>
-        <div class="fs-img">
-            <img src="/assets/img/vancouver-bag.jpg" alt="">
-        </div>
+        <h6 class="fs-description">
+          Water Proof sit amet, consectetur adipiscing elit, Pellentesue nuc
+          praesent cras phatetra diam ac turpis ultrices vestibulum. Eu
+          tristique suspendisse
+        </h6>
+        <div class="fs-btn">Shop Now</div>
+      </div>
+      <div class="fs-img">
+        <img src="/assets/img/vancouver-bag.jpg" alt="" />
+      </div>
     </section>
 
     <section class="first-cards">
-        <!-- Reference from creation Card-->
-        <!-- <div class="card">
+      <!-- Reference from creation Card-->
+      <!-- <div class="card">
             <img src="/assets/img/vancouver-bag.jpg" alt="">
             <div class="card-info">
                 <span class="card-info-title">Rolltop Rucksack</span>
@@ -72,175 +89,207 @@
     </section>
 
     <section class="second-section">
-        <div class="ss-img-container">
-            <img src="/assets/img/yellow-bag.jpg" alt="">
+      <div class="ss-img-container">
+        <img src="/assets/img/yellow-bag.jpg" alt="" />
+      </div>
+      <div class="ss-text">
+        <div class="ss-title">
+          <h1>
+            Smart Waterproof <br />
+            Goods
+          </h1>
         </div>
-        <div class="ss-text">
-            <div class="ss-title">
-                <h1>
-                    Smart Waterproof <br>
-                    Goods
-                </h1>
-            </div>
-            <h6>
-                Water Proof sit amet, consectetur adipiscing elit, Pellentesue
-                nuc praesent cras phatetra diam ac turpis ultrices vestibulum.
-                Eu tristique suspendisse.
-                <br>
-                <br>
-                Water Proof sit amet, consectetur adipiscing elit, Pellentesue
-                nuc praesent cras phatetra diam ac turpis ultrices vestibulum.
-                Eu tristique suspendisse.
-            </h6>
-            <div class="ss-btn"> Shop Now </div>
-        </div>
+        <h6>
+          Water Proof sit amet, consectetur adipiscing elit, Pellentesue nuc
+          praesent cras phatetra diam ac turpis ultrices vestibulum. Eu
+          tristique suspendisse.
+          <br />
+          <br />
+          Water Proof sit amet, consectetur adipiscing elit, Pellentesue nuc
+          praesent cras phatetra diam ac turpis ultrices vestibulum. Eu
+          tristique suspendisse.
+        </h6>
+        <div class="ss-btn">Shop Now</div>
+      </div>
     </section>
 
     <section class="third-section">
-        <div class="fs-text">
-            <div class="fs-title">
-                <h1>
-                    The Lighest in <br>
-                    Wet-weather Gear
-                </h1>
-            </div>
-            <h6 class="fs-description">
-                Water Proof sit amet, consectetur adipiscing elit, Pellentesue
-                nuc praesent cras phatetra diam ac turpis ultrices vestibulum.
-                Eu tristique suspendisse.
-                <br>
-                <br>
-                Water Proof sit amet, consectetur adipiscing elit, Pellentesue
-                nuc praesent cras phatetra diam ac turpis ultrices vestibulum.
-                Eu tristique suspendisse.
-            </h6>
-            <div class="ts-btn"> Shop Now </div>
+      <div class="fs-text">
+        <div class="fs-title">
+          <h1>
+            The Lighest in <br />
+            Wet-weather Gear
+          </h1>
         </div>
-        <div class="ts-img">
-            <img src="/assets/img/waterproof-coat.png" alt="">
-        </div>
+        <h6 class="fs-description">
+          Water Proof sit amet, consectetur adipiscing elit, Pellentesue nuc
+          praesent cras phatetra diam ac turpis ultrices vestibulum. Eu
+          tristique suspendisse.
+          <br />
+          <br />
+          Water Proof sit amet, consectetur adipiscing elit, Pellentesue nuc
+          praesent cras phatetra diam ac turpis ultrices vestibulum. Eu
+          tristique suspendisse.
+        </h6>
+        <div class="ts-btn">Shop Now</div>
+      </div>
+      <div class="ts-img">
+        <img src="/assets/img/waterproof-coat.png" alt="" />
+      </div>
     </section>
 
-    <section class="second-cards">
-    </section>
+    <section class="second-cards"></section>
 
     <section class="spring-section">
-        <div class="ts-title">
-            <h1>
-                Never Lost Spring
-                Summer 2021
-            </h1>
-            <div class="img-w">
-                <img class="img1" src="/assets/img/women-coat.jpg" alt="">
-            </div>
+      <div class="ts-title">
+        <h1>Never Lost Spring Summer 2021</h1>
+        <div class="img-w">
+          <img class="img1" src="/assets/img/women-coat.jpg" alt="" />
         </div>
-        <div class="ts-img-1">
-            <div>
-                <img class="img1" src="/assets/img/men-coat.jpg" alt="">
-            </div>
-            <div class="ts-img-container">
-                <h1 class="ts-title">Long Puffer Jackez</h1>
-            </div>
-            <div class="fts-btn">
-                Explore Now
-            </div>
+      </div>
+      <div class="ts-img-1">
+        <div>
+          <img class="img1" src="/assets/img/men-coat.jpg" alt="" />
         </div>
+        <div class="ts-img-container">
+          <h1 class="ts-title">Long Puffer Jackez</h1>
+        </div>
+        <div class="fts-btn">Explore Now</div>
+      </div>
     </section>
 
     <section class="section form">
-        <div class="ts-title">
-            <div>
-                <h1>Newsletter</h1>
-            </div>
+      <div class="ts-title">
+        <div>
+          <h1>Newsletter</h1>
         </div>
-        <div class="select-genre">
-            <i class="far fa-circle fa-2x icon"></i>
-            <span class="form-checked-info ">
-                MALE
-            </span>
-            <i class="far fa-dot-circle fa-2x icon"></i>
-            <span class="form-checked-info">
-                FEMALE
-            </span>
-        </div>
-        <div class="form-submit">
-            <input placeholder="Email" type="email" class="form-input" />
-            <div class="form-btn">
-                SUBSCRIBE
-            </div>
-        </div>
+      </div>
+      <div class="select-genre">
+        <i class="far fa-circle fa-2x icon"></i>
+        <span class="form-checked-info"> MALE </span>
+        <i class="far fa-dot-circle fa-2x icon"></i>
+        <span class="form-checked-info"> FEMALE </span>
+      </div>
+      <div class="form-submit">
+        <input placeholder="Email" type="email" class="form-input" />
+        <div class="form-btn">SUBSCRIBE</div>
+      </div>
     </section>
 
     <section class="section">
-        <div class="rains-info">
-            <div class="rains-info-img">
-                <img class="img-logo" src="/assets/img/logo.svg" alt="logo">
-            </div>
-            <div class="card-info-title">
-                Water Proof sit amet, consectetur adipiscing elit, Pellentesue
-                nuc praesent cras phatetra diam ac turpis ultrices vestibulum.
-                Eu tristique suspendisse.
-            </div>
-            <div class="icons">
-                <i class="fab fa-facebook fa-2x"></i>
-                <i class="fab fa-pinterest fa-2x"></i>
-                <i class="fab fa-instagram fa-2x"></i>
-                <i class="fas fa-basketball-ball fa-2x"></i>
-                <i class="fab fa-behance fa-2x"></i>
-            </div>
+      <div class="rains-info">
+        <div class="rains-info-img">
+          <img class="img-logo" src="/assets/img/logo.svg" alt="logo" />
         </div>
-        <div class="rains-divisions">
-            <div class="division">
-                <ul>
-                    <h1 class="services">Services</h1>
-                </ul>
-                <ul>Contact</ul>
-                <ul>Shiping</ul>
-                <ul>Returns</ul>
-                <ul>Size Guide</ul>
-                <ul>Help Center</ul>
-                <ul>Dealers</ul>
-            </div>
-            <div class="division">
-                <ul>
-                    <h1 class="services">Company</h1>
-                </ul>
-                <ul>About</ul>
-                <ul>Product</ul>
-                <ul>Responsibility</ul>
-                <ul>Career</ul>
-                <ul>Image bank</ul>
-                <ul>Dealers</ul>
-            </div>
-            <div>
-                <ul>
-                    <h1 class="services">Terms</h1>
-                </ul>
-                <ul>Terms &</ul>
-                <ul>Conditions</ul>
-                <ul>Privacy Policy</ul>
-                <ul>Cokkie Policy</ul>
-            </div>
+        <div class="card-info-title">
+          Water Proof sit amet, consectetur adipiscing elit, Pellentesue nuc
+          praesent cras phatetra diam ac turpis ultrices vestibulum. Eu
+          tristique suspendisse.
         </div>
+        <div class="icons">
+          <i class="fab fa-facebook fa-2x"></i>
+          <i class="fab fa-pinterest fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fas fa-basketball-ball fa-2x"></i>
+          <i class="fab fa-behance fa-2x"></i>
+        </div>
+      </div>
+      <div class="rains-divisions">
+        <div class="division">
+          <ul>
+            <h1 class="services">Services</h1>
+          </ul>
+          <ul>
+            Contact
+          </ul>
+          <ul>
+            Shiping
+          </ul>
+          <ul>
+            Returns
+          </ul>
+          <ul>
+            Size Guide
+          </ul>
+          <ul>
+            Help Center
+          </ul>
+          <ul>
+            Dealers
+          </ul>
+        </div>
+        <div class="division">
+          <ul>
+            <h1 class="services">Company</h1>
+          </ul>
+          <ul>
+            About
+          </ul>
+          <ul>
+            Product
+          </ul>
+          <ul>
+            Responsibility
+          </ul>
+          <ul>
+            Career
+          </ul>
+          <ul>
+            Image bank
+          </ul>
+          <ul>
+            Dealers
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <h1 class="services">Terms</h1>
+          </ul>
+          <ul>
+            Terms &
+          </ul>
+          <ul>
+            Conditions
+          </ul>
+          <ul>
+            Privacy Policy
+          </ul>
+          <ul>
+            Cokkie Policy
+          </ul>
+        </div>
+      </div>
     </section>
 
+    <div id="cart-modal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <footer class="footer footer-section">
-        <div class="footer-mark">
-            <h6>
-                Copyright©Rains 2021, Design by: Tanbir
-            </h6>
-        </div>
-        <div class="footer-right-bar">
-            <h6>
-                Accept for
-            </h6>
-            <i class="fab fa-google-pay fa-2x"></i>
-            <i class="fab fa-cc-mastercard fa-2x"></i>
-            <i class="fab fa-paypal fa-2x"></i>
-            <i class="fab fa-cc-visa fa-2x"></i>
-        </div>
+      <div class="footer-mark">
+        <h6>Copyright©Rains 2021, Design by: Tanbir</h6>
+      </div>
+      <div class="footer-right-bar">
+        <h6>Accept for</h6>
+        <i class="fab fa-google-pay fa-2x"></i>
+        <i class="fab fa-cc-mastercard fa-2x"></i>
+        <i class="fab fa-paypal fa-2x"></i>
+        <i class="fab fa-cc-visa fa-2x"></i>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
