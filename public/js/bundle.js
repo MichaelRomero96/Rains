@@ -1,1 +1,32 @@
-(()=>{const e={id:"6f839a1f0b4c49a394d993adf236698f",url:"https://openexchangerates.org/api/latest.json"},t=[],n=[],r={men:".first-cards",women:".second-cards"},a={menCategory:"men's clothing",womenCategory:"women's clothing"};let c;const i=new class{constructor(e,t,n){this.exchangeRate=e,this.price=t,this.htmlElement=n}convertToDollar(e,t){return`$${(e/t).toFixed(2)}`}getHtmlElement(){const e=document.querySelector("#currency-btn");null!==e&&e.addEventListener("click",(r=>{if("fa-euro-sign"===e.classList[1])if(e.classList.replace("fa-euro-sign","fa-dollar-sign"),0!==n.length)o(),l(n);else{o();const e=t.map((e=>({...e,price:this.convertToDollar(e.price,c)})));n.push(...e),l(e)}else o(),e.classList.replace("fa-dollar-sign","fa-euro-sign"),l(t.map((e=>({...e,price:`€${e.price}`}))))}))}};class s{constructor(e,t,n,r,a){this.image=e,this.title=t,this.price=n,this.rating={rate:r.rate,count:r.count},this.section=a}createCard(){const e=document.createElement("div");return e.classList.add("card"),e.appendChild(this.createImage()),e.appendChild(this.createInfo()),e}createImage(){const e=document.createElement("img");return e.setAttribute("src",this.image),e}createInfo(){const e=document.createElement("div");return e.classList.add("card-info-title"),e.appendChild(this.createTitle()),e.appendChild(this.createDetails()),e}createTitle(){const e=document.createElement("div");return e.textContent=this.title,e.classList.add("card"),e}createDetails(){const e=document.createElement("div");return e.classList.add("card-details"),e.appendChild(this.createPrice()),e.appendChild(this.createRating()[0]),e}createPrice(){const e=document.createElement("div");return e.classList.add("card-price"),e.textContent=`${this.price}`,e}createRating(){const e=document.createElement("div");e.classList.add("card-rating");const t=document.createElement("div");return t.classList.add("card-rating-icon"),t.textContent=this.rating.rate,e.appendChild(t),t.appendChild(this.createStarIcon()),t.appendChild(this.createCount()),[e,t]}createStarIcon(){const e=document.createElement("i");return e.classList.add("fas","fa-star"),e}createCount(){const e=document.createElement("span");return e.classList.add("card-count-rating"),e.textContent=this.rating.count,e}htmlInject(){const e=document.querySelector(this.section);this.createCard(),this.createInfo(),this.createImage(),this.createTitle(),this.createDetails(),this.createPrice(),this.createRating(),this.createStarIcon(),this.createCount(),e.appendChild(this.createCard())}}function o(){const e=document.querySelector(".first-cards"),t=document.querySelector(".second-cards");for(;e.firstChild;)e.removeChild(e.firstChild);for(;t.firstChild;)t.removeChild(t.firstChild)}function d(e,t,n){let r=e.filter((e=>e.category===t));0!==r.length&&r.map((({image:e,title:t,price:r,rating:a},c)=>{c<4&&new s(e,t,r,a,n).htmlInject()}))}function l(e){if(0!==e.length){const{menCategory:t,womenCategory:n}=a,{men:c,women:i}=r;d(e,t,c),d(e,n,i)}}window.addEventListener("DOMContentLoaded",(n=>{!function(){let e=new XMLHttpRequest;e.overrideMimeType("application/json"),e.open("GET","https://fakestoreapi.com/products",!0),e.onload=()=>{let n=JSON.parse(e.responseText);t.push(...n),l(n.map((e=>({...e,price:`€${e.price}`}))))},e.send(null)}(),function(){const{id:t,url:n}=e;let r=new XMLHttpRequest;r.overrideMimeType("application/json"),r.open("GET",`${n}?app_id=${t}`,!0),r.onload=()=>{let e=JSON.parse(r.responseText);c=e.rates.EUR},r.send(null)}(),i.getHtmlElement()}))})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ (() => {
+
+eval("console.log('webpack');\n\n//# sourceURL=webpack://rains/./src/index.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/index.js"]();
+/******/ 	
+/******/ })()
+;
