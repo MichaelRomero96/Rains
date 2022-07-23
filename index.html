@@ -44,7 +44,7 @@
           class="fas fa-euro-sign fa-lg"
         ></i>
         <i class="fas fa-search fa-lg"></i>
-        <i data-bs-toggle="modal" id="cart-button" class="fas fa-shopping-bag fa-lg"></i>
+        <i id="cart-button" class="fas fa-shopping-bag fa-lg"></i>
         <i class="fas fa-bars fa-lg"></i>
       </div>
     </header>
@@ -261,7 +261,7 @@
       </div>
     </section>
 
-    <div id="cart-modal" class="modal" tabindex="-1">
+    <!-- <div id="cart-modal" class="modal" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -277,7 +277,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
     <footer class="footer footer-section">
       <div class="footer-mark">
@@ -291,5 +291,34 @@
         <i class="fab fa-cc-visa fa-2x"></i>
       </div>
     </footer>
+    <div class="modal__no-content hidden"></div>
+    <div class="cart-modal cart-modal--hidden">
+      <h2>Carrito de Compras</h2>
+    </div>
   </body>
+  <style>
+    .hidden{
+      display: none;
+    }
+    .modal__no-content{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50vw;
+      height: 100vh;
+    }
+    .cart-modal {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: 100vh;
+      background-color: #fff;
+      transition: width 0.35s ease;
+      border: 1px solid rgb(236, 236, 236);
+    }
+    .cart-modal--hidden {
+      width: 0;
+    }
+  </style>
 </html>
